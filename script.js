@@ -43,7 +43,7 @@ function addListItem() {
     todoList.appendChild(newItem);
   } else {
     newItem.remove();
-    alert("Max 8 todos, bro!");
+    alert("Max 8 todos, bro!!");
   }
   input.value = "";
 }
