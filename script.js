@@ -39,7 +39,12 @@ function addListItem() {
   let newItem = document.createElement("li");
   newItem.className = "list-item";
   newItem.innerText = input.value;
-  todoList.appendChild(newItem);
+  if (todoList.children.length < 8) {
+    todoList.appendChild(newItem);
+  } else {
+    newItem.remove();
+    alert("Max 7 todos, bro!");
+  }
   input.value = "";
 }
 
