@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/*   ------------------------
+**   ------ WHOLE PAGE ------
+**   ------------------------ */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  font-family: "Josefin Sans", sans-serif;
+  --col-bg: hsl(0, 0%, 95%);
+  --col-list-bg: #fff;
+  --col-list-txt: hsl(235, 19%, 35%);
+}
+
+body.dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  font-family: "Josefin Sans", sans-serif;
+  --col-bg: hsl(235, 21%, 11%);
+  --col-list-bg: hsl(235, 24%, 19%);
+  --col-list-txt: hsl(234, 39%, 85%);
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--col-bg);
+}
+
+/*   --------------------
+**   ------ HEADER ------
+**   -------------------- */
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  margin-top: 7.5vh;
+  margin-left: 30vw;
+  width: 40%;
+  height: 7.5vh;
+  color: white;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+}
+
+.btn-container:hover {
+  cursor: pointer;
+}
+
+/*   -------------------------------
+**   ------ LIST-ITEM CREATOR ------
+**   ------------------------------- */
+
+.listItem-creator {
+  position: fixed;
+  margin-top: 17.5vh;
+  margin-left: 30vw;
+  width: 40%;
+  height: 7.5vh;
+  background-color: var(--col-list-bg);
+  border: 1px solid var(--col-list-bg);
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.myBtn {
+  height: 0;
+  width: 0;
+}
+
+/*   ----------------------------
+**   ------ LIST CONTAINER ------
+**   ---------------------------- */
+
+.list-container {
+  position: fixed;
+  margin-top: 27.5vh;
+  margin-left: 30vw;
+  width: 40%;
+  background-color: var(--col-list-bg);
+  border: 1px solid var(--col-list-bg);
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px #000;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  margin: 0;
+  padding: 0 0 0 25px;
+  width: 100%;
+  height: 7.5vh;
+  list-style-type: none;
+  color: var(--col-list-txt);
+  background-color: var(--col-list-bg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid hsl(236, 9%, 61%);
+}
+
+.list-btns-container {
+  padding: 0 5%;
+  height: 7.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--col-list-bg);
+}
+
+.list-item-counter {
+  font-size: 0.75rem;
+  width: 20%;
+  color: hsl(234, 11%, 52%);
+}
+
+.list-mid-btns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+.list-mid-btns {
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: none;
+  background-color: var(--col-list-bg);
+  color: hsl(234, 11%, 52%);
+}
+
+#clearItems {
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: none;
+  background-color: var(--col-list-bg);
+  color: hsl(234, 11%, 52%);
+}
+
+/*   ------------------------------------
+**   ------ TOP BACKGROUND PICTURE ------
+**   ------------------------------------ */
+
+.top-img {
+  width: 100%;
+}
+
+/*   --------------------
+**   ------ FOOTER ------
+**   -------------------- */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  margin-top: 92.5vh;
+  margin-left: 25vw;
+  width: 50%;
+  height: 7.5vh;
+  color: hsl(234, 11%, 52%);
+}
+
+.h5-footer {
+  margin: 0;
+  padding: 0;
+}

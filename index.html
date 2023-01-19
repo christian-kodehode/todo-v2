@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Todo list</title>
+  </head>
+  <body>
+    <div class="main" id="main">
+      <div class="header-container" id="header-container">
+        <h1 class="header" id="header">TODO</h1>
+        <div class="btn-container" id="btn-container" onclick="moodChanger()">
+          <img
+            class="moon-btn"
+            id="moodChangerImg"
+            alt="button image of the moon, click button to switch to dark mode"
+            src="./project-files/images/icon-moon.svg"
+          />
+        </div>
+      </div>
+      <input class="listItem-creator" id="listItem-creator" />
+      <div class="list-container" id="list-container">
+        <ul class="todo-list" id="todo-list"></ul>
+        <div class="list-btns-container" id="list-btns-container">
+          <div class="list-item-counter">Placeholder</div>
+          <div class="list-mid-btns-container">
+            <button class="list-mid-btns" id="all-btn" onclick="showAll()">All</button>
+            <button class="list-mid-btns" id="active-btn" onclick="showActive()">
+              Active
+            </button>
+            <button class="list-mid-btns" id="completed-btn" onclick="showCompleted()">
+              Completed
+            </button>
+          </div>
+          <button id="clearItems" onclick="clearItems()">Clear completed</button>
+        </div>
+      </div>
+      <div class="footer" id="footer">
+        <h5 class="h5-footer" id="h5-footer">Drop and drag to reorder list</h5>
+      </div>
+      <img
+        class="top-img"
+        id="top-img"
+        src="./project-files/images/bg-desktop-light.jpg"
+        alt="spisse fjelltopper bak en fargefilter-lense i rosa til blått"
+      />
+    </div>
+    <button id="myBtn" class="myBtn" onclick="addListItem()"></button>
+  </body>
+</html>
