@@ -3,22 +3,22 @@ let moodChecker = true;
 function moodChanger() {
   if (moodChecker === true) {
     let btnImg = document.getElementById("moodChangerImg");
-    btnImg.src = "./project-files/images/icon-moon.svg";
-
-    let topImg = document.getElementById("top-img");
-    topImg.src = "./project-files/images/bg-desktop-light.jpg";
-
-    document.body.className = "";
-
-    moodChecker = false;
-  } else if (moodChecker === false) {
-    let btnImg = document.getElementById("moodChangerImg");
     btnImg.src = "./project-files/images/icon-sun.svg";
 
     let topImg = document.getElementById("top-img");
     topImg.src = "./project-files/images/bg-desktop-dark.jpg";
 
     document.body.className = "dark";
+
+    moodChecker = false;
+  } else if (moodChecker === false) {
+    let btnImg = document.getElementById("moodChangerImg");
+    btnImg.src = "./project-files/images/icon-moon.svg";
+
+    let topImg = document.getElementById("top-img");
+    topImg.src = "./project-files/images/bg-desktop-light.jpg";
+
+    document.body.className = "";
 
     moodChecker = true;
   }
