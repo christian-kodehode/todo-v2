@@ -84,8 +84,12 @@ body.dark {
 }
 
 .myBtn {
-  height: 0;
-  width: 0;
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  margin-top: 50vh;
+  margin-right: 90vw;
+  opacity: 0%;
 }
 
 /*   ----------------------------
