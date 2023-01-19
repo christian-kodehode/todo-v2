@@ -1,5 +1,15 @@
 let moodChecker = true;
 
+var input = document.getElementById("listItem-creator");
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+});
+
+// fixed?
 function moodChanger() {
   if (moodChecker === true) {
     let btnImg = document.getElementById("moodChangerImg");
@@ -23,15 +33,6 @@ function moodChanger() {
     moodChecker = true;
   }
 }
-
-var input = document.getElementById("listItem-creator");
-
-input.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
-  }
-});
 
 function addListItem() {
   let input = document.getElementById("listItem-creator");
